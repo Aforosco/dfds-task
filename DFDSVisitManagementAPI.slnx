@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="DFDSVisitManagementAPI.Application/DFDSVisitManagementAPI.Application.csproj" />
+  <Project Path="DFDSVisitManagementAPI.Business/DFDSVisitManagementAPI.Business.csproj" />
+  <Project Path="DFDSVisitManagementAPI.Domain/DFDSVisitManagementAPI.Domain.csproj" />
+  <Project Path="DFDSVisitManagementAPI.Framework/DFDSVisitManagementAPI.Framework.csproj" />
+  <Project Path="DFDSVisitManagementAPI.Test/DFDSVisitManagementAPI.Test.csproj" />
+  <Project Path="DFDSVisitManagementAPI.Tests/DFDSVisitManagementAPI.Tests.csproj" />
+</Solution>

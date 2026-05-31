@@ -1,0 +1,17 @@
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/bin/Debug/net10.0/DFDSVisitManagementAPI.Application.deps.json
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/bin/Debug/net10.0/DFDSVisitManagementAPI.Application.dll
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/bin/Debug/net10.0/DFDSVisitManagementAPI.Application.pdb
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/bin/Debug/net10.0/DFDSVisitManagementAPI.Business.dll
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/bin/Debug/net10.0/DFDSVisitManagementAPI.Domain.dll
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/bin/Debug/net10.0/DFDSVisitManagementAPI.Business.pdb
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/bin/Debug/net10.0/DFDSVisitManagementAPI.Domain.pdb
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/DFDSVisitManagementAPI.Application.csproj.AssemblyReference.cache
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/DFDSVisitManagementAPI.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/DFDSVisitManagementAPI.Application.AssemblyInfoInputs.cache
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/DFDSVisitManagementAPI.Application.AssemblyInfo.cs
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/DFDSVisitManagementAPI.Application.csproj.CoreCompileInputs.cache
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/DFDSVisi.35520DA3.Up2Date
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/DFDSVisitManagementAPI.Application.dll
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/refint/DFDSVisitManagementAPI.Application.dll
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/DFDSVisitManagementAPI.Application.pdb
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/ref/DFDSVisitManagementAPI.Application.dll

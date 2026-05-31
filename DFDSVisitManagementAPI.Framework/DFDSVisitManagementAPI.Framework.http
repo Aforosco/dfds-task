@@ -1,0 +1,6 @@
+@DFDSVisitManagementAPI.Framework_HostAddress = http://localhost:5072
+
+GET {{DFDSVisitManagementAPI.Framework_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
