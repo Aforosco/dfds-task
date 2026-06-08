@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DFDSVisitManagementAPI.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94559183afc9282eb853c23f5c2e1e721d1997ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("DFDSVisitManagementAPI.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DFDSVisitManagementAPI.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

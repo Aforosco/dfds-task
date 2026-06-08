@@ -24,6 +24,22 @@
           "build/netstandard2.0/coverlet.collector.targets": {}
         }
       },
+      "GitHubActionsTestLogger/3.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/GitHubActionsTestLogger.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/GitHubActionsTestLogger.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/GitHubActionsTestLogger.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/10.0.8": {
         "type": "package",
         "compile": {
@@ -1227,6 +1243,27 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.4.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "GitHubActionsTestLogger/3.0.4": {
+      "sha512": "24fDBf5g5KuyeK9OIu4z0zIkOu6DE3JCmRP+NyNGL3PVmd2Yls8sR8dC1/j34t2tZQS/0arQs7GZTmwWYk4qbQ==",
+      "type": "package",
+      "path": "githubactionstestlogger/3.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/GitHubActionsTestLogger.props",
+        "favicon.png",
+        "githubactionstestlogger.3.0.4.nupkg.sha512",
+        "githubactionstestlogger.nuspec",
+        "lib/net10.0/GitHubActionsTestLogger.dll",
+        "lib/net10.0/GitHubActionsTestLogger.xml",
+        "lib/net6.0/GitHubActionsTestLogger.dll",
+        "lib/net6.0/GitHubActionsTestLogger.xml",
+        "lib/net7.0/GitHubActionsTestLogger.dll",
+        "lib/net7.0/GitHubActionsTestLogger.xml",
+        "lib/netstandard2.0/GitHubActionsTestLogger.dll",
+        "lib/netstandard2.0/GitHubActionsTestLogger.xml"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/10.0.8": {
@@ -2689,6 +2726,7 @@
     "net10.0": [
       "DFDSVisitManagementAPI.Business >= 1.0.0",
       "DFDSVisitManagementAPI.Domain >= 1.0.0",
+      "GitHubActionsTestLogger >= 3.0.4",
       "Microsoft.EntityFrameworkCore.InMemory >= 10.0.8",
       "Microsoft.NET.Test.Sdk >= 17.14.1",
       "NSubstitute >= 5.3.0",
@@ -2750,6 +2788,10 @@
         "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
+          "GitHubActionsTestLogger": {
+            "target": "Package",
+            "version": "[3.0.4, )"
+          },
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[10.0.8, )"

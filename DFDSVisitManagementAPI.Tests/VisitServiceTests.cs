@@ -178,6 +178,7 @@ namespace DFDSVisitManagementAPI.Tests
             Assert.Equal(2, result.Activities.Count);
         }
 
+
         [Fact]
         public async Task GetAllAsync_ReturnsAllVisits()
         {
@@ -191,10 +192,10 @@ namespace DFDSVisitManagementAPI.Tests
             await service.CreateAsync(BuildCreateDto(driver.Id, "DK-XY-99999", VisitStatus.AtGate));
 
             // Act
-            var results = await service.GetAllAsync();
+            var results = await service.GetAllAsync(new VisitQueryDto());
 
             // Assert
-            Assert.NotEmpty(results);
+            Assert.NotEmpty(results.Data);  // ← was results, now results.Data
         }
 
         [Fact]
@@ -276,5 +277,78 @@ namespace DFDSVisitManagementAPI.Tests
             // Assert
             Assert.Null(result);
         }
+        
+        [Fact]
+public async Task GetAllAsync_FilterByStatus_ReturnsOnlyMatchingVisits()
+{
+    // Arrange
+    var context = CreateInMemoryContext();
+    var driver = BuildDriver();
+    context.Drivers.Add(driver);
+    await context.SaveChangesAsync();
+
+    var service = new VisitService(context);
+    await service.CreateAsync(BuildCreateDto(driver.Id, "DK-AA-11111", VisitStatus.PreRegistered));
+    await service.CreateAsync(BuildCreateDto(driver.Id, "DK-BB-22222", VisitStatus.AtGate));
+
+    // Act
+    var results = await service.GetAllAsync(new VisitQueryDto
+    {
+        Status = "PreRegistered"
+    });
+
+    // Assert
+    Assert.Single(results.Data);
+    Assert.All(results.Data, v => Assert.Equal(VisitStatus.PreRegistered, v.Status));
+}
+
+[Fact]
+public async Task GetAllAsync_FilterByDriverId_ReturnsOnlyThatDriversVisits()
+{
+    // Arrange
+    var context = CreateInMemoryContext();
+    var driver1 = BuildDriver("James", "Okafor");
+    var driver2 = BuildDriver("Maria", "Hansen");
+    context.Drivers.AddRange(driver1, driver2);
+    await context.SaveChangesAsync();
+
+    var service = new VisitService(context);
+    await service.CreateAsync(BuildCreateDto(driver1.Id, "DK-AA-11111"));
+    await service.CreateAsync(BuildCreateDto(driver2.Id, "DK-BB-22222"));
+
+    // Act
+    var results = await service.GetAllAsync(new VisitQueryDto
+    {
+        DriverId = driver1.Id.ToString()
+    });
+
+    // Assert
+    Assert.Single(results.Data);
+    Assert.Equal(driver1.Id, results.Data[0].Driver!.Id);
+}
+
+[Fact]
+public async Task GetAllAsync_PageSize_LimitsResults()
+{
+    // Arrange
+    var context = CreateInMemoryContext();
+    var driver = BuildDriver();
+    context.Drivers.Add(driver);
+    await context.SaveChangesAsync();
+
+    var service = new VisitService(context);
+
+    // Create 5 visits
+    for (int i = 0; i < 5; i++)
+        await service.CreateAsync(BuildCreateDto(driver.Id, $"DK-AA-0000{i}"));
+
+    // Act — request only 2
+    var results = await service.GetAllAsync(new VisitQueryDto { PageSize = 2 });
+
+    // Assert
+    Assert.Equal(2, results.Data.Count);
+    Assert.True(results.HasMore);
+    Assert.NotNull(results.NextCursor);
+}
     }
 }

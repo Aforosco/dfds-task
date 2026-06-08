@@ -15,3 +15,4 @@
 /Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/refint/DFDSVisitManagementAPI.Application.dll
 /Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/DFDSVisitManagementAPI.Application.pdb
 /Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/ref/DFDSVisitManagementAPI.Application.dll
+/Users/oregbemiafolabi/Projects/DFDSVisitManagementAPI/DFDSVisitManagementAPI.Application/obj/Debug/net10.0/DFDSVisitManagementAPI.Application.sourcelink.json

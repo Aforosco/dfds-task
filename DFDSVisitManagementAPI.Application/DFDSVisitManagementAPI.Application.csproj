@@ -7,12 +7,23 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.10" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>  
+    <NoWarn>$(NoWarn);1591</NoWarn> 
   </PropertyGroup>
+
+  
+  <Target Name="CopyXmlDocs" AfterTargets="Publish">
+    <Copy
+      SourceFiles="$(OutputPath)$(AssemblyName).xml"
+      DestinationFolder="$(PublishDir)"
+      Condition="Exists('$(OutputPath)$(AssemblyName).xml')" />
+  </Target>
 
 </Project>
